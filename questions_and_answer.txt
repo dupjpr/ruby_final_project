@@ -1,0 +1,10 @@
+In command line what is the command used to know the current route of a file or directory?
+pwd
+When we work with Ruby on the terminal, what is the command used to open the Ruby's interpreter and execute a piece of code?
+irb
+What is the result of the following boolean expression? !(5 == 5) && 8 != 8
+false
+What are we talking about when we have a characters chain in quotes?
+string
+What are we talking about when we have this expresion: x = x + 1? (counter or adder)
+counter
