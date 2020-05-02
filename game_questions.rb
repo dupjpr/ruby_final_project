@@ -1,82 +1,3 @@
-
-# def load(path)
-#     File.read(path)
-# end
-
-# def split(str)
-#     str.split("\n")
-# end
-
-# def questions(arr)
-#     coleccion = []
-#     if arr.size.even?
-#         (0...arr.size).step(2) do |idx|
-#             if idx.even?
-#                 coleccion << { question: arr[idx], answer: arr[idx + 1] }
-#             end 
-#         end
-#     end
-#     coleccion
-# end
-
-# def output(path)
-#     str = load(path)
-#     arr = split(str)
-#     questions(arr)
-# end
-
-# class UX
-#     def generateQuestion(str)
-#         puts str
-#     end
-
-#     def getAnswer()
-#         gets.chomp.downcase
-#     end
-
-#     def notGood(str = "Your answer is not good!!!")
-#         puts str
-#     end
-
-#     def okCool(str = "The answer is correct")
-#         puts str
-#     end
-
-#     def notify(str)
-#         puts str
-#     end
-#     def line() puts "|#{"=" * 15}|" end
-# end
-
-
-# def startGame(path)
-#     ui = UX.new
-#     questions = output(path)
-#     questions.shuffle.each do |item|
-#         ui.generateQuestion(item[:question])
-#         ui.notify "Write your answer:" 
-
-#         answer = ui.getAnswer
-
-#         while answer != item[:answer]
-#             ui.notGood
-#             ui.notify "Write your answer:"
-#             answer = ui.getAnswer
-#         end
-#         ui.okCool "the answer is correct"
-#         ui.line
-#         ui.notify "next question"
-#     end
-
-# end
-
-# startGame("questions_and_answer.txt")
-
-
-
-
-
-    
 def read(path)
 
     arra = File.read(path).split("\n")
@@ -165,6 +86,79 @@ end
 send("questions_and_answer.txt")
 
 
+
+# def load(path)
+#     File.read(path)
+# end
+
+# def split(str)
+#     str.split("\n")
+# end
+
+# def questions(arr)
+#     coleccion = []
+#     if arr.size.even?
+#         (0...arr.size).step(2) do |idx|
+#             if idx.even?
+#                 coleccion << { question: arr[idx], answer: arr[idx + 1] }
+#             end 
+#         end
+#     end
+#     coleccion
+# end
+
+# def output(path)
+#     str = load(path)
+#     arr = split(str)
+#     questions(arr)
+# end
+
+# class UX
+#     def generateQuestion(str)
+#         puts str
+#     end
+
+#     def getAnswer()
+#         gets.chomp.downcase
+#     end
+
+#     def notGood(str = "Your answer is not good!!!")
+#         puts str
+#     end
+
+#     def okCool(str = "The answer is correct")
+#         puts str
+#     end
+
+#     def notify(str)
+#         puts str
+#     end
+#     def line() puts "|#{"=" * 15}|" end
+# end
+
+
+# def startGame(path)
+#     ui = UX.new
+#     questions = output(path)
+#     questions.shuffle.each do |item|
+#         ui.generateQuestion(item[:question])
+#         ui.notify "Write your answer:" 
+
+#         answer = ui.getAnswer
+
+#         while answer != item[:answer]
+#             ui.notGood
+#             ui.notify "Write your answer:"
+#             answer = ui.getAnswer
+#         end
+#         ui.okCool "the answer is correct"
+#         ui.line
+#         ui.notify "next question"
+#     end
+
+# end
+
+# startGame("questions_and_answer.txt")
 
 
 
